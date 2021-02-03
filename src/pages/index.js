@@ -58,10 +58,7 @@ function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
   return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
-    >
+    <div>
       <header className={classnames("hero hero--primary", styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title} is live!</h1>
@@ -92,7 +89,7 @@ function Home() {
           </section>
         )}
       </main>
-    </Layout>
+    </div>
   );
 }
 
